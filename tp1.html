@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <link
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="shadow text-bg-secondary p-3 rounded">
+            <h1 id="titulo">Registro de Alunos</h1>
+            <h5>Exemplo de Alunos ............</h5>
+          </div>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-md-3 col-12">
+          <button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            Criar aluno
+          </button>
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Modal title
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form id="formulario-aluno">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"
+                        >Nome</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lname1"
+                        name="name"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        >NIF</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lname2"
+                        name="nif"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        >Telefone</label
+                      >
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="telemovel"
+                        class="form-control"
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancelar
+                  </button>
+                  <button type="submit" class="btn btn-primary" id="registro">
+                    Registrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-md-12">
+          <table class="table" id="tabela">
+            <thead class="table-secondary">
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">NIF</th>
+                <th scope="col">Telemovel</th>
+                <th scope="col">Gerenciar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Miguel</th>
+                <td>1234578</td>
+                <td>971249821984</td>
+                <td>
+                  <button type="button" class="btn btn-primary">
+                    Atualizar
+                  </button>
+                  <button type="button" class="btn btn-danger">Apagar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Tiago</th>
+                <td>123456799</td>
+                <td>962312313</td>
+                <td>
+                  <button type="button" class="btn btn-primary">
+                    Atualizar
+                  </button>
+                  <button type="button" class="btn btn-danger">Apagar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./create.js"></script>
+    <script src="./delete.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
