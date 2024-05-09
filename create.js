@@ -1,8 +1,7 @@
-// aqui vou criar tudo o que peguei dos botoes
-
 botaoRegistrarAluno.addEventListener("click", function (event) {
   event.preventDefault();
   let aluno = obtemAlunoDoFormulario(formularioAlunos);
+  alert(aluno.nome);
   alert(aluno.nif);
   alert(aluno.telemovel);
   montaTr(aluno);
@@ -28,5 +27,9 @@ function montaTr(aluno) {
 
   let niftd = montaTd("nif", aluno.nif);
   let telemovel = montaTd("tel", aluno.telemovel);
-  let;
+  let nome = montaTd("name", aluno.nome);
+}
+
+function resetardados(canelarRegistro) {
+  x;
 }
