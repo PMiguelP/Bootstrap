@@ -21,15 +21,24 @@ function montaTr(aluno) {
   let alunoTr = document.createElement("Tr");
   alunoTr.classList.add("aluno");
 
-  let alunoTh = document.createElement("th");
-  alunoTh.classList.add("name");
-  alunoTh.setAttribute("scope", "row");
+  let alunoTd = document.createElement("Td");
+  alunoTd.classList.add("teste");
+}
+
+function montaTd(tabela) {
+  let alunoTd = document.createElement("Td");
+  alunoTd.classList.add("teste");
 
   let niftd = montaTd("nif", aluno.nif);
   let telemovel = montaTd("tel", aluno.telemovel);
   let nome = montaTd("name", aluno.nome);
 }
 
+function montaTh(name) {
+  let alunoTh = document.createElement("Th");
+  alunoTh.classList.add("name");
+  alunoTh.setAttribute("scope", "row");
+}
 function resetardados(canelarRegistro) {
   x;
 }
